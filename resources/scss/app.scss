@@ -1,1 +1,8 @@
-@import '~bootstrap/scss/bootstrap'
+@use "partials/mixins" as *;
+@use "partials/variables" as *;
+// @import '~bootstrap/scss/bootstrap';
+@import 'partials/general';
+@import 'partials/header';
+@import 'partials/comics';
+@import 'partials/banner';
+@import 'partials/footer';

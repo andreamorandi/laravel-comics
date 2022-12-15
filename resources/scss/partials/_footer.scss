@@ -1,0 +1,81 @@
+footer {
+    .footer-main {
+        background-image: url("../img/footer-bg.jpg");
+        .container {
+            @include flex(row, center, stretch);
+            gap: 3rem;
+            .nav {
+                width: 40%;
+                padding: 2rem 0;
+                .row {
+                    @include flex();
+                    align-items: stretch;
+                    flex-wrap: wrap;
+                    gap: 1.5rem;
+                    .col {
+                        width: calc(100% / 3 - 1.5rem * 2 / 3);
+                        h3 {
+                            margin: .75rem 0;
+                            color: white;
+                            text-transform: uppercase;
+                        }
+                        li {
+                            padding: .125rem 0;
+                            a {
+                                color: lighten(black, 50%);
+                                &:hover {
+                                    color: $primary-color;
+                                }
+                            }
+                            span {
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+            }
+            .logo {
+                width: 60%;
+                position: relative;
+                overflow: hidden;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    .footer-cta {
+        padding: 2rem 0;
+        background-color: lighten(black, 17.5%);
+        .container {
+            @include flex();
+            .sign-up {
+                a {
+                    padding: .75rem 1rem;
+                    font-weight: 600;
+                    border: 2px solid $primary-color;
+                    color: white;
+                    &:hover {
+                        color: black;
+                        background-color: $primary-color;
+                    }
+                }
+            }
+            .follow-us {
+                @include flex();
+                * {
+                    margin: 0rem .25rem;
+                }
+                span {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-right: .5rem;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

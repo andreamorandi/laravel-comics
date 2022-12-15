@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    background-color: lighten(black, 10%);
+    .jumbotron {
+        width: 100%;
+        padding: 15rem 0;
+        background-image: url("../img/jumbotron.jpg");
+        background-size: cover;
+    }
+}

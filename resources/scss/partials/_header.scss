@@ -1,0 +1,44 @@
+header {
+    .container {
+        height: 6rem;
+        @include flex();
+        .logo {
+            height: 100%;
+            flex-shrink: 0;
+            a {
+                height: 100%;
+                @include flex(row, center, center);
+                img {
+                    height: 80%;
+                }
+            }
+        }
+        .header-navigation {
+            height: 100%;
+            ul {
+                height: 100%;
+                @include flex();
+                li {
+                    height: 100%;
+                    a {
+                        height: 100%;
+                        @include flex-center();
+                        font-size: .85rem;
+                        font-weight: 600;
+                        padding: 0rem 1rem;
+                        padding-top: 5px;
+                        border-bottom: 5px solid transparent;
+                        &:hover,
+                        &.active {
+                            border-bottom: 5px solid $primary-color;
+                        }
+                        span {
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
