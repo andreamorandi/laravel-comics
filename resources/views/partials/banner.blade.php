@@ -1,3 +1,27 @@
+<?php
+$features = [
+    [
+        'description' => 'digital comics',
+        'image' => 'buy-comics-digital-comics.png',
+    ],
+    [
+        'description' => 'dc merchandise',
+        'image' => 'buy-comics-merchandise.png',
+    ],
+    [
+        'description' => 'subscription',
+        'image' => 'buy-comics-subscriptions.png',
+    ],
+    [
+        'description' => 'comic shop locator',
+        'image' => 'buy-comics-shop-locator.png',
+    ],
+    [
+        'description' => 'dc power visa',
+        'image' => 'buy-dc-power-visa.svg',
+    ],
+];
+?>
 <div class="banner">
     <div class="container">
         <div class="row">

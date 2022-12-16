@@ -1,3 +1,7 @@
+<?php
+$menu = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
+?>
+
 <header>
     <div class="container">
         <div class="logo">
@@ -9,7 +13,8 @@
             <ul>
                 @foreach ($menu as $item)
                     <li>
-                        <a href="{{ route($item) }}"><span>{{ $item }}</span></a>
+                        <a class="{{ Route::currentRouteName() === $item ? 'active' : '' }}"
+                            href="{{ route($item) }}"><span>{{ $item }}</span></a>
                     </li>
                 @endforeach
             </ul>

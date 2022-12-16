@@ -1,3 +1,24 @@
+<?php
+$footer_nav = [
+    [
+        'section_title' => 'dc comics',
+        'links' => ['characters', 'comics', 'movies', 'tv', 'games', 'videos', 'news'],
+        'sub_nav' => [
+            'section_title' => 'shop',
+            'links' => ['shop dc', 'shop dc collectibles'],
+        ],
+    ],
+    [
+        'section_title' => 'dc',
+        'links' => ['term of use', 'privacy policy (new)', 'ad choices', 'advertising', 'jobs', 'subscriptions', 'talent workshops', 'cpsc certificates', 'ratings', 'shop help', 'contact us'],
+    ],
+    [
+        'section_title' => 'sites',
+        'links' => ['dc', 'mad magazine', 'dc kids', 'dc universe', 'dc power visa'],
+    ],
+];
+$socials = ['facebook', 'twitter', 'twitter', 'youtube', 'pinterest', 'periscope'];
+?>
 <footer>
     <div class="footer-main">
         <div class="container">
